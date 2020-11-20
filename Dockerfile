@@ -1,4 +1,4 @@
-FROM phusion/baseimage
+FROM phusion/baseimage:master
 
 COPY local.pref /etc/apt/preferences.d/
 RUN apt-get update && apt-get install -y abcde cdparanoia lame eyed3 eject imagemagick glyrc normalize-audio beep flac mkcue && apt-get clean 
